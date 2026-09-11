@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "steadyfetch",
+  "owner": {
+    "name": "Steadyfetch",
+    "url": "https://github.com/steadyfetch"
+  },
+  "description": "Steadyfetch actors on Apify, packaged for agents.",
+  "plugins": [
+    {
+      "name": "steadyfetch-agent-tools",
+      "source": "./",
+      "description": "Ad, video, reel and audio transcripts plus Google Trends, keyword volume, job-board and Amazon data through Apify's MCP server — 30 pay-per-event Steadyfetch actors, charged per delivered item, never on a miss. Needs an Apify API token.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Steadyfetch",
+        "url": "https://github.com/steadyfetch"
+      },
+      "homepage": "https://apify.com/steadyfetch",
+      "license": "MIT",
+      "category": "data",
+      "tags": [
+        "apify",
+        "mcp",
+        "transcripts",
+        "google-trends",
+        "keyword-research",
+        "job-boards",
+        "amazon"
+      ]
+    }
+  ]
+}

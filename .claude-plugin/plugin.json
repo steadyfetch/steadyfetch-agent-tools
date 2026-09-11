@@ -22,6 +22,5 @@
     "job-boards",
     "amazon"
   ],
-  "mcpServers": "./.mcp.json",
-  "skills": "./skills/"
+  "mcpServers": "./.mcp.json"
 }

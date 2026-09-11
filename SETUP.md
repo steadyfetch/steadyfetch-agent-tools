@@ -23,11 +23,11 @@ Install this repository as a plugin. It brings the MCP server and both skills:
 
 ```bash
 claude plugin marketplace add steadyfetch/steadyfetch-agent-tools
-claude plugin install steadyfetch-agent-tools
+claude plugin install steadyfetch-agent-tools@steadyfetch
 ```
 
-Or clone it and point Claude Code at the directory. The server is defined in `.mcp.json`, which
-reads `APIFY_TOKEN` from your environment.
+The MCP server is defined in `.mcp.json` and reads `APIFY_TOKEN` from your environment. The two
+skills in `skills/` come with it.
 
 ### Gemini CLI
 
