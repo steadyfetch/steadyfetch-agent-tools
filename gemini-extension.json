@@ -1,0 +1,21 @@
+{
+  "name": "steadyfetch-agent-tools",
+  "version": "1.0.0",
+  "description": "Ad, video, reel and audio transcripts plus Google Trends, keyword volume, job-board and Amazon data through Apify's MCP server — 30 pay-per-event Steadyfetch actors, charged per delivered item, never on a miss. Needs an Apify API token.",
+  "mcpServers": {
+    "steadyfetch-apify": {
+      "httpUrl": "https://mcp.apify.com/?tools=fetch-actor-details,steadyfetch/google-trends-scraper,steadyfetch/facebook-ads-transcript-scraper,steadyfetch/instagram-reel-transcript-scraper,steadyfetch/media-transcriber,steadyfetch/keyword-search-volume-scraper,steadyfetch/instagram-profile-posts,steadyfetch/youtube-transcript-scraper,steadyfetch/multi-job-board-scraper,steadyfetch/youtube-channel-transcripts,steadyfetch/amazon-search-scraper,steadyfetch/google-keyword-suggest-scraper,steadyfetch/amazon-bestsellers-scraper,steadyfetch/google-trends-now-scraper,steadyfetch/breakout-keywords-scraper,steadyfetch/amazon-seller-scraper,steadyfetch/indeed-jobs-scraper,steadyfetch/amazon-product-scraper,steadyfetch/social-trends-scraper,steadyfetch/google-ads-video-transcript-scraper,steadyfetch/glassdoor-jobs-scraper,steadyfetch/company-jobs-by-domain,steadyfetch/google-ads-creative-text-scraper,steadyfetch/tiktok-ads-transcript-scraper,steadyfetch/google-jobs-scraper,steadyfetch/linkedin-ads-transcript-scraper,steadyfetch/instagram-hashtag-scraper,steadyfetch/instagram-post-details-scraper,steadyfetch/instagram-followers-scraper,steadyfetch/linkedin-jobs-scraper,steadyfetch/instagram-comments-scraper",
+      "headers": {
+        "Authorization": "Bearer ${APIFY_TOKEN}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "Apify API token",
+      "description": "Create one in the Apify Console under Settings -> API & Integrations.",
+      "envVar": "APIFY_TOKEN",
+      "sensitive": true
+    }
+  ]
+}

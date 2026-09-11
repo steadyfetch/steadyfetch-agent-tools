@@ -1,0 +1,27 @@
+{
+  "name": "steadyfetch-agent-tools",
+  "displayName": "Steadyfetch agent tools",
+  "version": "1.0.0",
+  "description": "Ad, video, reel and audio transcripts plus Google Trends, keyword volume, job-board and Amazon data through Apify's MCP server — 30 pay-per-event Steadyfetch actors, charged per delivered item, never on a miss. Needs an Apify API token.",
+  "author": {
+    "name": "Steadyfetch",
+    "url": "https://github.com/steadyfetch"
+  },
+  "homepage": "https://apify.com/steadyfetch",
+  "repository": "https://github.com/steadyfetch/steadyfetch-agent-tools",
+  "license": "MIT",
+  "keywords": [
+    "apify",
+    "mcp",
+    "transcripts",
+    "facebook-ads",
+    "youtube-transcript",
+    "instagram-reels",
+    "google-trends",
+    "keyword-research",
+    "job-boards",
+    "amazon"
+  ],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/"
+}
