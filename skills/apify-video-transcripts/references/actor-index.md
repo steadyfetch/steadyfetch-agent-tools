@@ -51,7 +51,7 @@ dedicated Actor and are pointed there rather than half-handled here.
 
 ## Prices
 
-Read live from each Actor's pricing record on **2026-09-11**. All four are `PAY_PER_EVENT` and charge
+Read live from each Actor's pricing record on **2026-09-23**. All four are `PAY_PER_EVENT` and charge
 only on delivery; platform usage is included in the event price.
 
 | Actor | Event | Free plan | Top plans |
@@ -60,14 +60,14 @@ only on delivery; platform usage is included in the event price.
 | `steadyfetch/youtube-transcript-scraper` | per speech-to-text minute (only when a video has no captions) | $0.008 | $0.008 |
 | `steadyfetch/youtube-channel-transcripts` | per delivered transcript | $0.005 | $0.0012 |
 | `steadyfetch/youtube-channel-transcripts` | per speech-to-text minute (only when a video has no captions) | $0.008 | $0.008 |
-| `steadyfetch/instagram-reel-transcript-scraper` | per delivered reel (first 3 minutes included) | $0.015 | $0.005 |
+| `steadyfetch/instagram-reel-transcript-scraper` | per delivered reel (first 3 minutes included) | $0.015 | $0.0075 |
 | `steadyfetch/instagram-reel-transcript-scraper` | per started minute beyond 3 | $0.005 | $0.005 |
 | `steadyfetch/media-transcriber` | per transcribed audio minute | $0.003 | $0.003 |
 
-A published pricing record raises the reel Actor's paid-plan price to **$0.0075** on **2026-09-15**.
-Re-read before quoting any of these to a user:
+Re-read before quoting any of these to a user. A record whose `startedAt` is still in the future is a
+published change that has not taken effect yet, so the command keeps only the records already in effect:
 
 ```bash
 apify actors info "steadyfetch/instagram-reel-transcript-scraper" \
-  --user-agent steadyfetch-agent-tools/apify-video-transcripts --json 2>/dev/null | jq '.pricingInfos[-1]'
+  --user-agent steadyfetch-agent-tools/apify-video-transcripts --json 2>/dev/null | jq '[.pricingInfos[] | select(.startedAt <= (now | todate))] | last'
 ```

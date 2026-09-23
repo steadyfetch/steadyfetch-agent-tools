@@ -15,8 +15,8 @@ working run look broken.
 - **Speech-to-text is the variable cost on YouTube.** $0.008 per started minute, charged only when a
   video has no usable captions. `maxSpeechMinutes` (default 60) is the cap; `enableSpeechFallback:
   false` removes the cost entirely at the price of returning nothing for uncaptioned videos. Prices
-  in this file were read live from each Actor's pricing record on 2026-09-11; re-read them with
-  `apify actors info "<actor-id>" --json | jq '.pricingInfos[-1]'` before quoting one to a user.
+  in this file were read live from each Actor's pricing record on 2026-09-23; re-read them with
+  `apify actors info "<actor-id>" --json | jq '[.pricingInfos[] | select(.startedAt <= (now | todate))] | last'` before quoting one to a user.
 - **A bare run with no input is not a free preview.** Each Actor's default input runs a small live
   sample and is charged like any other run.
 - **Estimating a channel:** delivered transcripts × the per-transcript price, plus $0.008 × the

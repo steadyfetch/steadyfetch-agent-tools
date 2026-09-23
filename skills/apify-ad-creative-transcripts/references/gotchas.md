@@ -18,10 +18,10 @@ costs nothing. Platform usage is included in the event price: no start fee, no s
 | `steadyfetch/tiktok-ads-transcript-scraper` | one delivered ad | $0.020 | $0.008 | $0.005 per started minute past 3 |
 | `steadyfetch/linkedin-ads-transcript-scraper` | one delivered creative | $0.020 | $0.008 | $0.005 per started minute past 3 |
 | `steadyfetch/google-ads-video-transcript-scraper` | one delivered video ad | $0.020 | $0.008 | $0.005 per started minute past 3 |
-| `steadyfetch/google-ads-creative-text-scraper` | one extracted creative | $0.015 | read live — a price change lands 2026-09-15 | — |
+| `steadyfetch/google-ads-creative-text-scraper` | one extracted creative | $0.015 | $0.006 | — |
 | `steadyfetch/media-transcriber` | one transcribed audio minute (rounded up) | $0.003 | $0.003 | — |
 
-Prices read live from each Actor's pricing record on 2026-09-11. They change; re-read them before quoting
+Prices read live from each Actor's pricing record on 2026-09-23. They change; re-read them before quoting
 a number to a user:
 
 ```bash
@@ -29,8 +29,9 @@ apify actors info "steadyfetch/facebook-ads-transcript-scraper" \
   --user-agent steadyfetch-agent-tools/apify-ad-creative-transcripts --json 2>/dev/null
 ```
 
-The pricing lives under `pricingInfos` — the entry with the most recent `startedAt` is the live one;
-earlier entries are superseded history, and reading the wrong one quotes a stale price.
+The pricing lives under `pricingInfos` — the entry with the most recent `startedAt` that is
+not in the future is the live one. Earlier entries are superseded history, and a later-dated entry is a
+published change that has not taken effect yet; reading the wrong one quotes the wrong price.
 
 ### Estimating before you run
 

@@ -108,7 +108,7 @@ itself is not the same on every actor.
   audio or video URL.
 - `skills/apify-ad-creative-transcripts/` — Meta, TikTok, LinkedIn and Google ad creative.
 
-Both carry live prices read on 2026-09-11 and the command to re-read them, because prices change.
+Both carry live prices read on 2026-09-23 and the command to re-read them, because prices change.
 
 ## License
 

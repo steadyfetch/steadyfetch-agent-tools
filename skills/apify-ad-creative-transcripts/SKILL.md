@@ -102,12 +102,12 @@ run. Say so before pressing Start on a user's account; do not use a bare run as 
 | TikTok — Creative Center top ads | `steadyfetch/tiktok-ads-transcript-scraper` | `discoverRegion`, `discoverIndustry`, `discoverPeriod`, `discoverSort` | $0.020 → $0.008 |
 | LinkedIn — Ad Library, video + image ads | `steadyfetch/linkedin-ads-transcript-scraper` | `accountOwners`, `keywords`, `countries`, `dateOption` | $0.020 → $0.008 |
 | Google — Transparency Center **video** ads | `steadyfetch/google-ads-video-transcript-scraper` | `advertisers`, `domains`, `region` | $0.020 → $0.008 |
-| Google — Transparency Center **text & image** creatives (headline, body, CTA, image OCR) | `steadyfetch/google-ads-creative-text-scraper` | `advertisers`, `domains`, `formats`, `region` | $0.015 free plan; paid plans lower — read it live, a change lands 2026-09-15 |
+| Google — Transparency Center **text & image** creatives (headline, body, CTA, image OCR) | `steadyfetch/google-ads-creative-text-scraper` | `advertisers`, `domains`, `formats`, `region` | $0.015 → $0.006 |
 | Any other media URL (a podcast, a landing-page video, a file) | `steadyfetch/media-transcriber` | `urls` | $0.003 per audio minute |
 
 All six are `PAY_PER_EVENT`, all charge **only on delivery**, and platform usage is included in the
 event price (no start fee, no separate compute bill). Prices read live from each Actor's pricing
-record on 2026-09-11 — re-check with `apify actors info` before quoting them to a user.
+record on 2026-09-23 — re-check with `apify actors info` before quoting them to a user.
 
 Google splits across two Actors on purpose: the Transparency Center carries a lot of text and image
 creative, and a "what are they saying" question is only half answered by the video ads. Run both for
