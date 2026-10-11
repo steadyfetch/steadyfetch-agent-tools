@@ -84,8 +84,8 @@ Task Progress:
 
 | The user has… | Actor | Main input | Price per delivered result |
 |---|---|---|---|
-| One or more YouTube videos, Shorts or finished live VODs | `steadyfetch/youtube-transcript-scraper` | `videoUrls` (URLs or bare video IDs) | $0.005 free plan → $0.0012 top plans, per transcript |
-| A whole YouTube channel — handle, URL or channel ID | `steadyfetch/youtube-channel-transcripts` | `channels` | $0.005 free plan → $0.0012 top plans, per transcript |
+| One or more YouTube videos, Shorts or finished live VODs | `steadyfetch/youtube-transcript-scraper` | `videoUrls` (URLs or bare video IDs) | $0.005 free plan → $0.00225 top plans, per transcript |
+| A whole YouTube channel — handle, URL or channel ID | `steadyfetch/youtube-channel-transcripts` | `channels` | $0.005 free plan → $0.0024 top plans, per transcript |
 | A creator's Instagram reels, or reel links | `steadyfetch/instagram-reel-transcript-scraper` | `handles`, or `reelUrls` | $0.015 free plan → $0.0075 top plans, per reel |
 | A podcast episode, a Loom, a Twitch VOD, an Archive.org item, or a direct media file link | `steadyfetch/media-transcriber` | `urls` | $0.003 per transcribed audio minute, every plan |
 

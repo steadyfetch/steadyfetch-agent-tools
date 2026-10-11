@@ -56,9 +56,9 @@ only on delivery; platform usage is included in the event price.
 
 | Actor | Event | Free plan | Top plans |
 |---|---|---|---|
-| `steadyfetch/youtube-transcript-scraper` | per delivered transcript | $0.005 | $0.0012 |
+| `steadyfetch/youtube-transcript-scraper` | per delivered transcript | $0.005 | $0.00225 |
 | `steadyfetch/youtube-transcript-scraper` | per speech-to-text minute (only when a video has no captions) | $0.008 | $0.008 |
-| `steadyfetch/youtube-channel-transcripts` | per delivered transcript | $0.005 | $0.0012 |
+| `steadyfetch/youtube-channel-transcripts` | per delivered transcript | $0.005 | $0.0024 |
 | `steadyfetch/youtube-channel-transcripts` | per speech-to-text minute (only when a video has no captions) | $0.008 | $0.008 |
 | `steadyfetch/instagram-reel-transcript-scraper` | per delivered reel (first 3 minutes included) | $0.015 | $0.0075 |
 | `steadyfetch/instagram-reel-transcript-scraper` | per started minute beyond 3 | $0.005 | $0.005 |
