@@ -103,7 +103,7 @@ run. Say so before pressing Start on a user's account; do not use a bare run as 
 | LinkedIn — Ad Library, video + image ads | `steadyfetch/linkedin-ads-transcript-scraper` | `accountOwners`, `keywords`, `countries`, `dateOption` | $0.020 → $0.008 |
 | Google — Transparency Center **video** ads | `steadyfetch/google-ads-video-transcript-scraper` | `advertisers`, `domains`, `region` | $0.020 → $0.008 |
 | Google — Transparency Center **text & image** creatives (headline, body, CTA, image OCR) | `steadyfetch/google-ads-creative-text-scraper` | `advertisers`, `domains`, `formats`, `region` | $0.015 → $0.006 |
-| Any other media URL (a podcast, a landing-page video, a file) | `steadyfetch/media-transcriber` | `urls` | $0.003 per audio minute |
+| Any other media URL (a podcast, a landing-page video, a file) | `steadyfetch/media-transcriber` | `urls` | $0.006 per audio minute |
 
 All six are `PAY_PER_EVENT`, all charge **only on delivery**, and platform usage is included in the
 event price (no start fee, no separate compute bill). Prices read live from each Actor's pricing

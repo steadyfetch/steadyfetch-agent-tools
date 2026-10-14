@@ -87,7 +87,7 @@ Task Progress:
 | One or more YouTube videos, Shorts or finished live VODs | `steadyfetch/youtube-transcript-scraper` | `videoUrls` (URLs or bare video IDs) | $0.005 free plan → $0.00225 top plans, per transcript |
 | A whole YouTube channel — handle, URL or channel ID | `steadyfetch/youtube-channel-transcripts` | `channels` | $0.005 free plan → $0.0024 top plans, per transcript |
 | A creator's Instagram reels, or reel links | `steadyfetch/instagram-reel-transcript-scraper` | `handles`, or `reelUrls` | $0.015 free plan → $0.0075 top plans, per reel |
-| A podcast episode, a Loom, a Twitch VOD, an Archive.org item, or a direct media file link | `steadyfetch/media-transcriber` | `urls` | $0.003 per transcribed audio minute, every plan |
+| A podcast episode, a Loom, a Twitch VOD, an Archive.org item, or a direct media file link | `steadyfetch/media-transcriber` | `urls` | $0.006 per transcribed audio minute, every plan |
 
 All four are `PAY_PER_EVENT` and charge **only on delivery** — a video with no speech, a dead link or
 a blocked fetch returns a row that costs nothing. Platform usage is included in the event price: no

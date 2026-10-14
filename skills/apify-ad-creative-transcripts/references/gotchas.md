@@ -19,7 +19,7 @@ costs nothing. Platform usage is included in the event price: no start fee, no s
 | `steadyfetch/linkedin-ads-transcript-scraper` | one delivered creative | $0.020 | $0.008 | $0.005 per started minute past 3 |
 | `steadyfetch/google-ads-video-transcript-scraper` | one delivered video ad | $0.020 | $0.008 | $0.005 per started minute past 3 |
 | `steadyfetch/google-ads-creative-text-scraper` | one extracted creative | $0.015 | $0.006 | — |
-| `steadyfetch/media-transcriber` | one transcribed audio minute (rounded up) | $0.003 | $0.003 | — |
+| `steadyfetch/media-transcriber` | one transcribed audio minute (rounded up) | $0.006 | $0.006 | — |
 
 Prices read live from each Actor's pricing record on 2026-09-23. They change; re-read them before quoting
 a number to a user:

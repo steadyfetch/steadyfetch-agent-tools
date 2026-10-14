@@ -62,7 +62,7 @@ only on delivery; platform usage is included in the event price.
 | `steadyfetch/youtube-channel-transcripts` | per speech-to-text minute (only when a video has no captions) | $0.008 | $0.008 |
 | `steadyfetch/instagram-reel-transcript-scraper` | per delivered reel (first 3 minutes included) | $0.015 | $0.0075 |
 | `steadyfetch/instagram-reel-transcript-scraper` | per started minute beyond 3 | $0.005 | $0.005 |
-| `steadyfetch/media-transcriber` | per transcribed audio minute | $0.003 | $0.003 |
+| `steadyfetch/media-transcriber` | per transcribed audio minute | $0.006 | $0.006 |
 
 Re-read before quoting any of these to a user. A record whose `startedAt` is still in the future is a
 published change that has not taken effect yet, so the command keeps only the records already in effect:
