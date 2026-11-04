@@ -1,6 +1,6 @@
 # Steadyfetch agent tools
 
-One MCP server, 30 Steadyfetch actors on Apify, pinned into a single tool list an agent can use
+One MCP server, 40 Steadyfetch actors on Apify, pinned into a single tool list an agent can use
 without browsing a store. Ad, video, reel and audio transcripts; Google Trends and keyword demand;
 job boards; Amazon product data; Instagram.
 
@@ -21,7 +21,7 @@ See [SETUP.md](SETUP.md). The only setup step is an Apify API token in `APIFY_TO
 ## The pinned URL
 
 ```
-https://mcp.apify.com/?tools=fetch-actor-details,steadyfetch/google-trends-scraper,steadyfetch/facebook-ads-transcript-scraper,steadyfetch/instagram-reel-transcript-scraper,steadyfetch/media-transcriber,steadyfetch/keyword-search-volume-scraper,steadyfetch/instagram-profile-posts,steadyfetch/youtube-transcript-scraper,steadyfetch/multi-job-board-scraper,steadyfetch/youtube-channel-transcripts,steadyfetch/amazon-search-scraper,steadyfetch/google-keyword-suggest-scraper,steadyfetch/amazon-bestsellers-scraper,steadyfetch/google-trends-now-scraper,steadyfetch/breakout-keywords-scraper,steadyfetch/amazon-seller-scraper,steadyfetch/indeed-jobs-scraper,steadyfetch/amazon-product-scraper,steadyfetch/social-trends-scraper,steadyfetch/google-ads-video-transcript-scraper,steadyfetch/glassdoor-jobs-scraper,steadyfetch/company-jobs-by-domain,steadyfetch/google-ads-creative-text-scraper,steadyfetch/tiktok-ads-transcript-scraper,steadyfetch/google-jobs-scraper,steadyfetch/linkedin-ads-transcript-scraper,steadyfetch/instagram-hashtag-scraper,steadyfetch/instagram-post-details-scraper,steadyfetch/instagram-followers-scraper,steadyfetch/linkedin-jobs-scraper,steadyfetch/instagram-comments-scraper
+https://mcp.apify.com/?tools=fetch-actor-details,steadyfetch/keyword-search-volume-scraper,steadyfetch/instagram-reel-transcript-scraper,steadyfetch/instagram-post-likers-scraper,steadyfetch/instagram-profile-details-scraper,steadyfetch/facebook-ads-transcript-scraper,steadyfetch/media-transcriber,steadyfetch/reddit-scraper,steadyfetch/linkedin-sales-navigator-scraper,steadyfetch/instagram-profile-posts,steadyfetch/instagram-keyword-reels-scraper,steadyfetch/facebook-reels-scraper,steadyfetch/google-trends-scraper,steadyfetch/instagram-comments-scraper,steadyfetch/youtube-transcript-scraper,steadyfetch/youtube-channel-transcripts,steadyfetch/instagram-followers-scraper,steadyfetch/linkedin-posts-scraper,steadyfetch/instagram-similar-profiles-scraper,steadyfetch/youtube-comments-scraper,steadyfetch/competitor-keywords-scraper,steadyfetch/multi-job-board-scraper,steadyfetch/amazon-search-scraper,steadyfetch/google-keyword-suggest-scraper,steadyfetch/amazon-bestsellers-scraper,steadyfetch/google-trends-now-scraper,steadyfetch/breakout-keywords-scraper,steadyfetch/amazon-seller-scraper,steadyfetch/indeed-jobs-scraper,steadyfetch/amazon-product-scraper,steadyfetch/social-trends-scraper,steadyfetch/google-ads-video-transcript-scraper,steadyfetch/glassdoor-jobs-scraper,steadyfetch/company-jobs-by-domain,steadyfetch/google-ads-creative-text-scraper,steadyfetch/tiktok-ads-transcript-scraper,steadyfetch/google-jobs-scraper,steadyfetch/linkedin-ads-transcript-scraper,steadyfetch/instagram-hashtag-scraper,steadyfetch/instagram-post-details-scraper,steadyfetch/linkedin-jobs-scraper
 ```
 
 Streamable HTTP. Send `Authorization: Bearer <your Apify API token>`.
